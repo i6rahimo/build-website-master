@@ -1,0 +1,307 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@font-face {
+  font-family: Suisse;
+  src: url('/assets/fonts/Suisse-Intl-Medium.ttf');
+}
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* Responsive typography */
+
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: #000;
+  color: #fff;
+  transition: .3s; /* For animation dark mode */
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: var(--body-font);
+  outline: none;
+  border: none;
+}
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== 
+    Color changes in some parts of 
+    the website, in dark theme 
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1440px;
+  margin:  auto;
+  padding: 0 32px 0;
+}
+
+.main {
+  overflow: hidden; /* For the animations ScrollReveal*/
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px 0;
+}
+.header__ul {
+  display: flex;
+  gap: 32px;
+}
+
+.header__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Suisse', sans-serif;
+
+}
+
+
+/*=============== HOME ===============*/
+
+.home__text {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 64px;
+  font-family: 'Suisse', sans-serif;
+  text-align: start;
+}
+.home__text span {
+  margin-left: 360px;
+}
+
+.dofamin__text {
+  margin: 1280px auto 1280px;
+  text-align: center;
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.about {
+  margin: 0 auto 640px;
+}
+
+.about__first-text {
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 110%;
+  margin-left: auto;
+  width: 676px;
+  max-width: 100%;  
+}
+
+.about__second-text {
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  width: 501px;
+  max-width: 100%; 
+  margin: 160px 0 0;
+}
+
+.aboutsecond__main {
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 110%;
+  width: 676px;
+  max-width: 100%;
+  margin-right: auto;
+}
+
+.aboutsecond__submain {
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  width: 501px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-top: 160px;
+}
+.aboutsecond__submain span {
+  opacity: .5;
+}
+
+.seriously {
+  margin: 1280px auto 1280px;
+}
+.seriously__text {
+  text-align: center;
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.want {
+  margin: 0 auto 320px;
+}
+.want__text {
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 64px;
+}
+.want__text span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skills {
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+}
+.skills__text-second {
+  width: 676px;
+  max-width: 100%;
+  margin: 160px 0 160px auto;
+}
+.skills__text-first {
+  width: 676px;
+  max-width: 100%;
+  margin-right: auto;
+}
+.skills__text-first span {
+  width: 100%;
+  display: inline-block;
+  text-align: end;
+}
+.skills__text-third {
+  width: 641px;
+  max-width: 100%;
+  margin-right: auto;
+}
+.skills__text-third span:nth-child(1) {
+  width: 100%;
+  display: inline-block;
+  text-align: end;
+}
+.help {
+  margin: 320px auto 160px;
+}
+.opacity {
+  opacity: .5;
+}
+.help__text {
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 110%;
+  width: 676px;
+  max-width: 100%;
+  text-align: left;
+}
+
+.be__text {
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  width: 501px;
+  max-width: 100%;
+  margin-left: auto;
+}
+.alone {
+  margin: 1280px auto 1280px;
+}
+.alone__text {
+  text-align: center;
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+}
+.telegram {
+  margin: 0 auto 1280px;
+}
+.telegram__text {
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 64px;
+}
+.telegram__text span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 750px) {
+  .home__text {
+    font-size: 44px;
+  }
+}
